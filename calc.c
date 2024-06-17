@@ -23,7 +23,7 @@ int pilhaCheia(Pilha *pilha) {
 
 void push(Pilha *pilha, char *item) {
     if (pilhaCheia(pilha)) {
-        printf("Pilha está cheia\n");
+        printf("Pilha esta cheia\n");
         exit(1);
     }
     pilha->items[++(pilha->topo)] = strdup(item);
@@ -31,7 +31,7 @@ void push(Pilha *pilha, char *item) {
 
 char *pop(Pilha *pilha) {
     if (pilhaVazia(pilha)) {
-        printf("Pilha is empty\n");
+        printf("Pilha esta vazia\n");
         exit(1);
     }
     return pilha->items[(pilha->topo)--];
